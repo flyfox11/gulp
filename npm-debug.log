@@ -1,0 +1,746 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '--save-dev',
+1 verbose cli   'gulp-notify' ]
+2 info using npm@2.15.1
+3 info using node@v4.4.4
+4 verbose install initial load of D:\project\gulp\package.json
+5 warn package.json test@1.0.0 No README data
+6 verbose installManyTop reading scoped package data from D:\project\gulp\node_modules\gulp\package.json
+7 verbose installManyTop reading scoped package data from D:\project\gulp\node_modules\gulp-clean-css\package.json
+8 verbose installManyTop reading scoped package data from D:\project\gulp\node_modules\gulp-less\package.json
+9 verbose installManyTop reading scoped package data from D:\project\gulp\node_modules\gulp-plumber\package.json
+10 verbose installManyTop reading scoped package data from D:\project\gulp\node_modules\gulp-sourcemaps\package.json
+11 verbose readDependencies loading dependencies from D:\project\gulp\package.json
+12 silly cache add args [ 'gulp-notify', null ]
+13 verbose cache add spec gulp-notify
+14 silly cache add parsed spec Result {
+14 silly cache add   raw: 'gulp-notify',
+14 silly cache add   scope: null,
+14 silly cache add   name: 'gulp-notify',
+14 silly cache add   rawSpec: '',
+14 silly cache add   spec: 'latest',
+14 silly cache add   type: 'tag' }
+15 silly addNamed gulp-notify@latest
+16 verbose addNamed "latest" is being treated as a dist-tag for gulp-notify
+17 info addNameTag [ 'gulp-notify', 'latest' ]
+18 silly mapToRegistry name gulp-notify
+19 silly mapToRegistry using default registry
+20 silly mapToRegistry registry https://registry.npmjs.org/
+21 silly mapToRegistry data Result {
+21 silly mapToRegistry   raw: 'gulp-notify',
+21 silly mapToRegistry   scope: null,
+21 silly mapToRegistry   name: 'gulp-notify',
+21 silly mapToRegistry   rawSpec: '',
+21 silly mapToRegistry   spec: 'latest',
+21 silly mapToRegistry   type: 'tag' }
+22 silly mapToRegistry uri https://registry.npmjs.org/gulp-notify
+23 verbose addNameTag registry:https://registry.npmjs.org/gulp-notify not in flight; fetching
+24 verbose request uri https://registry.npmjs.org/gulp-notify
+25 verbose request no auth needed
+26 info attempt registry request try #1 at 09:26:53
+27 verbose request id 010374dff6215113
+28 verbose etag "61E4GLTY99NJJR7LQHP1R4993"
+29 http request GET https://registry.npmjs.org/gulp-notify
+30 http 304 https://registry.npmjs.org/gulp-notify
+31 verbose headers { date: 'Thu, 10 Nov 2016 01:26:53 GMT',
+31 verbose headers   via: '1.1 varnish',
+31 verbose headers   'cache-control': 'max-age=300',
+31 verbose headers   etag: '"61E4GLTY99NJJR7LQHP1R4993"',
+31 verbose headers   age: '0',
+31 verbose headers   connection: 'keep-alive',
+31 verbose headers   'x-served-by': 'cache-itm7422-ITM',
+31 verbose headers   'x-cache': 'HIT',
+31 verbose headers   'x-cache-hits': '1',
+31 verbose headers   'x-timer': 'S1478741213.568169,VS0,VE145',
+31 verbose headers   vary: 'Accept-Encoding' }
+32 silly get cb [ 304,
+32 silly get   { date: 'Thu, 10 Nov 2016 01:26:53 GMT',
+32 silly get     via: '1.1 varnish',
+32 silly get     'cache-control': 'max-age=300',
+32 silly get     etag: '"61E4GLTY99NJJR7LQHP1R4993"',
+32 silly get     age: '0',
+32 silly get     connection: 'keep-alive',
+32 silly get     'x-served-by': 'cache-itm7422-ITM',
+32 silly get     'x-cache': 'HIT',
+32 silly get     'x-cache-hits': '1',
+32 silly get     'x-timer': 'S1478741213.568169,VS0,VE145',
+32 silly get     vary: 'Accept-Encoding' } ]
+33 verbose etag https://registry.npmjs.org/gulp-notify from cache
+34 verbose get saving gulp-notify to C:\Users\os-huzp\AppData\Roaming\npm-cache\registry.npmjs.org\gulp-notify\.cache.json
+35 verbose correctMkdir C:\Users\os-huzp\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+36 silly addNameTag next cb for gulp-notify with tag latest
+37 silly addNamed gulp-notify@2.2.0
+38 verbose addNamed "2.2.0" is a plain semver version for gulp-notify
+39 silly cache afterAdd gulp-notify@2.2.0
+40 verbose afterAdd C:\Users\os-huzp\AppData\Roaming\npm-cache\gulp-notify\2.2.0\package\package.json not in flight; writing
+41 verbose correctMkdir C:\Users\os-huzp\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+42 verbose afterAdd C:\Users\os-huzp\AppData\Roaming\npm-cache\gulp-notify\2.2.0\package\package.json written
+43 silly install resolved [ { name: 'gulp-notify',
+43 silly install resolved     version: '2.2.0',
+43 silly install resolved     description: 'gulp plugin to send messages based on Vinyl Files or Errors to Mac OS X, Linux or Windows using the node-notifier module. Fallbacks to Growl or simply logging',
+43 silly install resolved     keywords:
+43 silly install resolved      [ 'gulpplugin',
+43 silly install resolved        'notify',
+43 silly install resolved        'gulp',
+43 silly install resolved        'notification',
+43 silly install resolved        'reporter',
+43 silly install resolved        'windows notification',
+43 silly install resolved        'mac notification',
+43 silly install resolved        'notify-send',
+43 silly install resolved        'notify-osd',
+43 silly install resolved        'growl' ],
+43 silly install resolved     homepage: 'https://github.com/mikaelbr/gulp-notify',
+43 silly install resolved     bugs: { url: 'https://github.com/mikaelbr/gulp-notify/issues' },
+43 silly install resolved     author:
+43 silly install resolved      { name: 'Mikael Brevik',
+43 silly install resolved        email: 'mikaelbre@gmail.com',
+43 silly install resolved        url: 'https://github.com/mikaelbr' },
+43 silly install resolved     main: './index.js',
+43 silly install resolved     repository:
+43 silly install resolved      { type: 'git',
+43 silly install resolved        url: 'git://github.com/mikaelbr/gulp-notify.git' },
+43 silly install resolved     scripts: { test: 'mocha -R spec' },
+43 silly install resolved     dependencies:
+43 silly install resolved      { 'gulp-util': '^3.0.2',
+43 silly install resolved        'lodash.template': '^3.0.0',
+43 silly install resolved        'node-notifier': '^4.1.0',
+43 silly install resolved        'node.extend': '^1.1.3',
+43 silly install resolved        through2: '^0.6.3' },
+43 silly install resolved     devDependencies:
+43 silly install resolved      { gulp: '^3.8.10',
+43 silly install resolved        'gulp-plumber': '^0.6.6',
+43 silly install resolved        mocha: '^2.1.0',
+43 silly install resolved        should: '^4.6.1' },
+43 silly install resolved     engines: { node: '>=0.8.0', npm: '>=1.2.10' },
+43 silly install resolved     licenses: [ [Object] ],
+43 silly install resolved     gitHead: '5b44fcfa33d9b58740be3f32bdcdc7385a287768',
+43 silly install resolved     _id: 'gulp-notify@2.2.0',
+43 silly install resolved     _shasum: '046c8285c292e97eed4e15a009c26cbbe5cef135',
+43 silly install resolved     _from: 'gulp-notify@latest',
+43 silly install resolved     _npmVersion: '2.1.2',
+43 silly install resolved     _nodeVersion: '0.10.21',
+43 silly install resolved     _npmUser: { name: 'mikaelb', email: 'mikaelbre@gmail.com' },
+43 silly install resolved     maintainers: [ [Object] ],
+43 silly install resolved     dist:
+43 silly install resolved      { shasum: '046c8285c292e97eed4e15a009c26cbbe5cef135',
+43 silly install resolved        tarball: 'https://registry.npmjs.org/gulp-notify/-/gulp-notify-2.2.0.tgz' },
+43 silly install resolved     directories: {},
+43 silly install resolved     _resolved: 'https://registry.npmjs.org/gulp-notify/-/gulp-notify-2.2.0.tgz',
+43 silly install resolved     readme: 'ERROR: No README data found!' } ]
+44 info install gulp-notify@2.2.0 into D:\project\gulp
+45 info installOne gulp-notify@2.2.0
+46 verbose installOne of gulp-notify to D:\project\gulp not in flight; installing
+47 verbose correctMkdir C:\Users\os-huzp\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+48 verbose lock using C:\Users\os-huzp\AppData\Roaming\npm-cache\_locks\gulp-notify-8eef068a24d43774.lock for D:\project\gulp\node_modules\gulp-notify
+49 silly install write writing gulp-notify 2.2.0 to D:\project\gulp\node_modules\gulp-notify
+50 verbose unbuild node_modules\gulp-notify
+51 silly gentlyRm D:\project\gulp\node_modules\gulp-notify is being purged from base D:\project\gulp
+52 verbose gentlyRm don't care about contents; nuking D:\project\gulp\node_modules\gulp-notify
+53 verbose tar unpack C:\Users\os-huzp\AppData\Roaming\npm-cache\gulp-notify\2.2.0\package.tgz
+54 verbose tar unpacking to D:\project\gulp\node_modules\gulp-notify
+55 silly gentlyRm D:\project\gulp\node_modules\gulp-notify is being purged
+56 verbose gentlyRm don't care about contents; nuking D:\project\gulp\node_modules\gulp-notify
+57 silly gunzTarPerm modes [ '777', '666' ]
+58 silly gunzTarPerm extractEntry package.json
+59 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+60 silly gunzTarPerm extractEntry .npmignore
+61 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+62 silly gunzTarPerm extractEntry README.md
+63 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+64 silly gunzTarPerm extractEntry LICENSE
+65 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+66 silly gunzTarPerm extractEntry index.js
+67 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+68 silly gunzTarPerm extractEntry .jshintrc
+69 silly gunzTarPerm modified mode [ '.jshintrc', 420, 438 ]
+70 silly gunzTarPerm extractEntry .travis.yml
+71 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+72 silly gunzTarPerm extractEntry CHANGELOG.md
+73 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 420, 438 ]
+74 silly gunzTarPerm extractEntry .editorconfig
+75 silly gunzTarPerm modified mode [ '.editorconfig', 420, 438 ]
+76 silly gunzTarPerm extractEntry assets/gulp-error.png
+77 silly gunzTarPerm modified mode [ 'assets/gulp-error.png', 420, 438 ]
+78 silly gunzTarPerm extractEntry assets/gulp.png
+79 silly gunzTarPerm modified mode [ 'assets/gulp.png', 420, 438 ]
+80 silly gunzTarPerm extractEntry examples/gulpfile.js
+81 silly gunzTarPerm modified mode [ 'examples/gulpfile.js', 420, 438 ]
+82 silly gunzTarPerm extractEntry examples/jshint.js
+83 silly gunzTarPerm modified mode [ 'examples/jshint.js', 420, 438 ]
+84 silly gunzTarPerm extractEntry examples/gulp.png
+85 silly gunzTarPerm modified mode [ 'examples/gulp.png', 420, 438 ]
+86 silly gunzTarPerm extractEntry .gitattributes
+87 silly gunzTarPerm modified mode [ '.gitattributes', 420, 438 ]
+88 silly gunzTarPerm extractEntry lib/extra_api.js
+89 silly gunzTarPerm modified mode [ 'lib/extra_api.js', 420, 438 ]
+90 silly gunzTarPerm extractEntry lib/notify.js
+91 silly gunzTarPerm modified mode [ 'lib/notify.js', 420, 438 ]
+92 silly gunzTarPerm extractEntry lib/report.js
+93 silly gunzTarPerm modified mode [ 'lib/report.js', 420, 438 ]
+94 silly gunzTarPerm extractEntry lib/withReporter.js
+95 silly gunzTarPerm modified mode [ 'lib/withReporter.js', 420, 438 ]
+96 silly gunzTarPerm extractEntry test/main.js
+97 silly gunzTarPerm modified mode [ 'test/main.js', 420, 438 ]
+98 silly gunzTarPerm extractEntry test/fixtures/1.txt
+99 silly gunzTarPerm modified mode [ 'test/fixtures/1.txt', 420, 438 ]
+100 silly gunzTarPerm extractEntry test/fixtures/2.txt
+101 silly gunzTarPerm modified mode [ 'test/fixtures/2.txt', 420, 438 ]
+102 silly gunzTarPerm extractEntry test/fixtures/3.txt
+103 silly gunzTarPerm modified mode [ 'test/fixtures/3.txt', 420, 438 ]
+104 verbose write writing to D:\project\gulp\node_modules\gulp-notify\package.json
+105 info preinstall gulp-notify@2.2.0
+106 verbose readDependencies loading dependencies from D:\project\gulp\node_modules\gulp-notify\package.json
+107 silly prepareForInstallMany adding gulp-util@^3.0.2 from gulp-notify dependencies
+108 silly prepareForInstallMany adding lodash.template@^3.0.0 from gulp-notify dependencies
+109 silly prepareForInstallMany adding node-notifier@^4.1.0 from gulp-notify dependencies
+110 silly prepareForInstallMany adding node.extend@^1.1.3 from gulp-notify dependencies
+111 silly prepareForInstallMany adding through2@^0.6.3 from gulp-notify dependencies
+112 verbose readDependencies loading dependencies from D:\project\gulp\node_modules\gulp-notify\package.json
+113 silly cache add args [ 'gulp-util@^3.0.2', null ]
+114 verbose cache add spec gulp-util@^3.0.2
+115 silly cache add args [ 'lodash.template@^3.0.0', null ]
+116 verbose cache add spec lodash.template@^3.0.0
+117 silly cache add parsed spec Result {
+117 silly cache add   raw: 'gulp-util@^3.0.2',
+117 silly cache add   scope: null,
+117 silly cache add   name: 'gulp-util',
+117 silly cache add   rawSpec: '^3.0.2',
+117 silly cache add   spec: '>=3.0.2 <4.0.0',
+117 silly cache add   type: 'range' }
+118 silly addNamed gulp-util@>=3.0.2 <4.0.0
+119 verbose addNamed ">=3.0.2 <4.0.0" is a valid semver range for gulp-util
+120 silly addNameRange { name: 'gulp-util', range: '>=3.0.2 <4.0.0', hasData: false }
+121 silly mapToRegistry name gulp-util
+122 silly mapToRegistry using default registry
+123 silly mapToRegistry registry https://registry.npmjs.org/
+124 silly mapToRegistry data Result {
+124 silly mapToRegistry   raw: 'gulp-util',
+124 silly mapToRegistry   scope: null,
+124 silly mapToRegistry   name: 'gulp-util',
+124 silly mapToRegistry   rawSpec: '',
+124 silly mapToRegistry   spec: 'latest',
+124 silly mapToRegistry   type: 'tag' }
+125 silly mapToRegistry uri https://registry.npmjs.org/gulp-util
+126 verbose addNameRange registry:https://registry.npmjs.org/gulp-util not in flight; fetching
+127 silly cache add parsed spec Result {
+127 silly cache add   raw: 'lodash.template@^3.0.0',
+127 silly cache add   scope: null,
+127 silly cache add   name: 'lodash.template',
+127 silly cache add   rawSpec: '^3.0.0',
+127 silly cache add   spec: '>=3.0.0 <4.0.0',
+127 silly cache add   type: 'range' }
+128 silly addNamed lodash.template@>=3.0.0 <4.0.0
+129 verbose addNamed ">=3.0.0 <4.0.0" is a valid semver range for lodash.template
+130 silly addNameRange { name: 'lodash.template',
+130 silly addNameRange   range: '>=3.0.0 <4.0.0',
+130 silly addNameRange   hasData: false }
+131 silly mapToRegistry name lodash.template
+132 silly mapToRegistry using default registry
+133 silly mapToRegistry registry https://registry.npmjs.org/
+134 silly mapToRegistry data Result {
+134 silly mapToRegistry   raw: 'lodash.template',
+134 silly mapToRegistry   scope: null,
+134 silly mapToRegistry   name: 'lodash.template',
+134 silly mapToRegistry   rawSpec: '',
+134 silly mapToRegistry   spec: 'latest',
+134 silly mapToRegistry   type: 'tag' }
+135 silly mapToRegistry uri https://registry.npmjs.org/lodash.template
+136 verbose addNameRange registry:https://registry.npmjs.org/lodash.template not in flight; fetching
+137 silly cache add args [ 'node-notifier@^4.1.0', null ]
+138 verbose cache add spec node-notifier@^4.1.0
+139 silly cache add parsed spec Result {
+139 silly cache add   raw: 'node-notifier@^4.1.0',
+139 silly cache add   scope: null,
+139 silly cache add   name: 'node-notifier',
+139 silly cache add   rawSpec: '^4.1.0',
+139 silly cache add   spec: '>=4.1.0 <5.0.0',
+139 silly cache add   type: 'range' }
+140 silly addNamed node-notifier@>=4.1.0 <5.0.0
+141 verbose addNamed ">=4.1.0 <5.0.0" is a valid semver range for node-notifier
+142 silly addNameRange { name: 'node-notifier',
+142 silly addNameRange   range: '>=4.1.0 <5.0.0',
+142 silly addNameRange   hasData: false }
+143 silly mapToRegistry name node-notifier
+144 silly mapToRegistry using default registry
+145 silly mapToRegistry registry https://registry.npmjs.org/
+146 silly mapToRegistry data Result {
+146 silly mapToRegistry   raw: 'node-notifier',
+146 silly mapToRegistry   scope: null,
+146 silly mapToRegistry   name: 'node-notifier',
+146 silly mapToRegistry   rawSpec: '',
+146 silly mapToRegistry   spec: 'latest',
+146 silly mapToRegistry   type: 'tag' }
+147 silly mapToRegistry uri https://registry.npmjs.org/node-notifier
+148 verbose addNameRange registry:https://registry.npmjs.org/node-notifier not in flight; fetching
+149 silly cache add args [ 'node.extend@^1.1.3', null ]
+150 verbose cache add spec node.extend@^1.1.3
+151 silly cache add parsed spec Result {
+151 silly cache add   raw: 'node.extend@^1.1.3',
+151 silly cache add   scope: null,
+151 silly cache add   name: 'node.extend',
+151 silly cache add   rawSpec: '^1.1.3',
+151 silly cache add   spec: '>=1.1.3 <2.0.0',
+151 silly cache add   type: 'range' }
+152 silly addNamed node.extend@>=1.1.3 <2.0.0
+153 verbose addNamed ">=1.1.3 <2.0.0" is a valid semver range for node.extend
+154 silly addNameRange { name: 'node.extend', range: '>=1.1.3 <2.0.0', hasData: false }
+155 silly mapToRegistry name node.extend
+156 silly mapToRegistry using default registry
+157 silly mapToRegistry registry https://registry.npmjs.org/
+158 silly mapToRegistry data Result {
+158 silly mapToRegistry   raw: 'node.extend',
+158 silly mapToRegistry   scope: null,
+158 silly mapToRegistry   name: 'node.extend',
+158 silly mapToRegistry   rawSpec: '',
+158 silly mapToRegistry   spec: 'latest',
+158 silly mapToRegistry   type: 'tag' }
+159 silly mapToRegistry uri https://registry.npmjs.org/node.extend
+160 verbose addNameRange registry:https://registry.npmjs.org/node.extend not in flight; fetching
+161 silly cache add args [ 'through2@^0.6.3', null ]
+162 verbose cache add spec through2@^0.6.3
+163 silly cache add parsed spec Result {
+163 silly cache add   raw: 'through2@^0.6.3',
+163 silly cache add   scope: null,
+163 silly cache add   name: 'through2',
+163 silly cache add   rawSpec: '^0.6.3',
+163 silly cache add   spec: '>=0.6.3 <0.7.0',
+163 silly cache add   type: 'range' }
+164 silly addNamed through2@>=0.6.3 <0.7.0
+165 verbose addNamed ">=0.6.3 <0.7.0" is a valid semver range for through2
+166 silly addNameRange { name: 'through2', range: '>=0.6.3 <0.7.0', hasData: false }
+167 silly mapToRegistry name through2
+168 silly mapToRegistry using default registry
+169 silly mapToRegistry registry https://registry.npmjs.org/
+170 silly mapToRegistry data Result {
+170 silly mapToRegistry   raw: 'through2',
+170 silly mapToRegistry   scope: null,
+170 silly mapToRegistry   name: 'through2',
+170 silly mapToRegistry   rawSpec: '',
+170 silly mapToRegistry   spec: 'latest',
+170 silly mapToRegistry   type: 'tag' }
+171 silly mapToRegistry uri https://registry.npmjs.org/through2
+172 verbose addNameRange registry:https://registry.npmjs.org/through2 not in flight; fetching
+173 verbose request uri https://registry.npmjs.org/node.extend
+174 verbose request no auth needed
+175 info attempt registry request try #1 at 09:26:55
+176 verbose etag "9S2R2HSGSBRSXAFNC5C39O4W2"
+177 http request GET https://registry.npmjs.org/node.extend
+178 verbose request uri https://registry.npmjs.org/lodash.template
+179 verbose request no auth needed
+180 info attempt registry request try #1 at 09:26:55
+181 verbose etag "APQYOYWE5GEM6SGIIMOFQ3145"
+182 http request GET https://registry.npmjs.org/lodash.template
+183 verbose request uri https://registry.npmjs.org/gulp-util
+184 verbose request no auth needed
+185 info attempt registry request try #1 at 09:26:55
+186 verbose etag "HGL60Y154S55G9NVI8CL6923"
+187 http request GET https://registry.npmjs.org/gulp-util
+188 verbose request uri https://registry.npmjs.org/through2
+189 verbose request no auth needed
+190 info attempt registry request try #1 at 09:26:55
+191 verbose etag "9FE67TGWT3YUP196WYXP4CV2V"
+192 http request GET https://registry.npmjs.org/through2
+193 verbose request uri https://registry.npmjs.org/node-notifier
+194 verbose request no auth needed
+195 info attempt registry request try #1 at 09:26:55
+196 verbose etag "DAJYDJ4VTG9Y4JW209YLVL4N9"
+197 http request GET https://registry.npmjs.org/node-notifier
+198 http 304 https://registry.npmjs.org/node.extend
+199 verbose headers { date: 'Thu, 10 Nov 2016 01:26:54 GMT',
+199 verbose headers   via: '1.1 varnish',
+199 verbose headers   'cache-control': 'max-age=300',
+199 verbose headers   etag: '"9S2R2HSGSBRSXAFNC5C39O4W2"',
+199 verbose headers   age: '126',
+199 verbose headers   connection: 'keep-alive',
+199 verbose headers   'x-served-by': 'cache-itm7422-ITM',
+199 verbose headers   'x-cache': 'HIT',
+199 verbose headers   'x-cache-hits': '1',
+199 verbose headers   'x-timer': 'S1478741214.929361,VS0,VE0',
+199 verbose headers   vary: 'Accept-Encoding' }
+200 silly get cb [ 304,
+200 silly get   { date: 'Thu, 10 Nov 2016 01:26:54 GMT',
+200 silly get     via: '1.1 varnish',
+200 silly get     'cache-control': 'max-age=300',
+200 silly get     etag: '"9S2R2HSGSBRSXAFNC5C39O4W2"',
+200 silly get     age: '126',
+200 silly get     connection: 'keep-alive',
+200 silly get     'x-served-by': 'cache-itm7422-ITM',
+200 silly get     'x-cache': 'HIT',
+200 silly get     'x-cache-hits': '1',
+200 silly get     'x-timer': 'S1478741214.929361,VS0,VE0',
+200 silly get     vary: 'Accept-Encoding' } ]
+201 verbose etag https://registry.npmjs.org/node.extend from cache
+202 verbose get saving node.extend to C:\Users\os-huzp\AppData\Roaming\npm-cache\registry.npmjs.org\node.extend\.cache.json
+203 verbose correctMkdir C:\Users\os-huzp\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+204 silly addNameRange number 2 { name: 'node.extend', range: '>=1.1.3 <2.0.0', hasData: true }
+205 silly addNameRange versions [ 'node.extend',
+205 silly addNameRange   [ '0.0.1',
+205 silly addNameRange     '1.0.0',
+205 silly addNameRange     '1.0.1',
+205 silly addNameRange     '1.0.2',
+205 silly addNameRange     '1.0.3',
+205 silly addNameRange     '1.0.4',
+205 silly addNameRange     '1.0.5',
+205 silly addNameRange     '1.0.6',
+205 silly addNameRange     '1.0.7',
+205 silly addNameRange     '1.0.8',
+205 silly addNameRange     '1.0.9',
+205 silly addNameRange     '1.0.10',
+205 silly addNameRange     '1.1.0',
+205 silly addNameRange     '1.1.1',
+205 silly addNameRange     '1.1.2',
+205 silly addNameRange     '1.1.3',
+205 silly addNameRange     '1.1.4',
+205 silly addNameRange     '1.1.5',
+205 silly addNameRange     '1.1.6' ] ]
+206 silly addNamed node.extend@1.1.6
+207 verbose addNamed "1.1.6" is a plain semver version for node.extend
+208 silly cache afterAdd node.extend@1.1.6
+209 verbose afterAdd C:\Users\os-huzp\AppData\Roaming\npm-cache\node.extend\1.1.6\package\package.json not in flight; writing
+210 verbose correctMkdir C:\Users\os-huzp\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+211 verbose afterAdd C:\Users\os-huzp\AppData\Roaming\npm-cache\node.extend\1.1.6\package\package.json written
+212 http 304 https://registry.npmjs.org/lodash.template
+213 verbose headers { date: 'Thu, 10 Nov 2016 01:26:55 GMT',
+213 verbose headers   via: '1.1 varnish',
+213 verbose headers   'cache-control': 'max-age=300',
+213 verbose headers   etag: '"APQYOYWE5GEM6SGIIMOFQ3145"',
+213 verbose headers   age: '106',
+213 verbose headers   connection: 'keep-alive',
+213 verbose headers   'x-served-by': 'cache-itm7424-ITM',
+213 verbose headers   'x-cache': 'HIT',
+213 verbose headers   'x-cache-hits': '2',
+213 verbose headers   'x-timer': 'S1478741215.184831,VS0,VE0',
+213 verbose headers   vary: 'Accept-Encoding' }
+214 silly get cb [ 304,
+214 silly get   { date: 'Thu, 10 Nov 2016 01:26:55 GMT',
+214 silly get     via: '1.1 varnish',
+214 silly get     'cache-control': 'max-age=300',
+214 silly get     etag: '"APQYOYWE5GEM6SGIIMOFQ3145"',
+214 silly get     age: '106',
+214 silly get     connection: 'keep-alive',
+214 silly get     'x-served-by': 'cache-itm7424-ITM',
+214 silly get     'x-cache': 'HIT',
+214 silly get     'x-cache-hits': '2',
+214 silly get     'x-timer': 'S1478741215.184831,VS0,VE0',
+214 silly get     vary: 'Accept-Encoding' } ]
+215 verbose etag https://registry.npmjs.org/lodash.template from cache
+216 verbose get saving lodash.template to C:\Users\os-huzp\AppData\Roaming\npm-cache\registry.npmjs.org\lodash.template\.cache.json
+217 verbose correctMkdir C:\Users\os-huzp\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+218 silly addNameRange number 2 { name: 'lodash.template',
+218 silly addNameRange   range: '>=3.0.0 <4.0.0',
+218 silly addNameRange   hasData: true }
+219 silly addNameRange versions [ 'lodash.template',
+219 silly addNameRange   [ '2.0.0',
+219 silly addNameRange     '2.1.0',
+219 silly addNameRange     '2.2.0',
+219 silly addNameRange     '2.2.1',
+219 silly addNameRange     '2.3.0',
+219 silly addNameRange     '2.4.0',
+219 silly addNameRange     '2.4.1',
+219 silly addNameRange     '3.0.0',
+219 silly addNameRange     '3.0.1',
+219 silly addNameRange     '3.1.0',
+219 silly addNameRange     '3.2.0',
+219 silly addNameRange     '3.3.0',
+219 silly addNameRange     '3.3.1',
+219 silly addNameRange     '3.3.2',
+219 silly addNameRange     '3.4.0',
+219 silly addNameRange     '3.5.0',
+219 silly addNameRange     '3.5.1',
+219 silly addNameRange     '3.6.0',
+219 silly addNameRange     '3.6.1',
+219 silly addNameRange     '3.6.2',
+219 silly addNameRange     '4.0.0',
+219 silly addNameRange     '4.0.1',
+219 silly addNameRange     '4.0.2',
+219 silly addNameRange     '4.1.0',
+219 silly addNameRange     '4.1.1',
+219 silly addNameRange     '4.2.0',
+219 silly addNameRange     '4.2.1',
+219 silly addNameRange     '4.2.2',
+219 silly addNameRange     '4.2.3',
+219 silly addNameRange     '4.2.4',
+219 silly addNameRange     '4.2.5',
+219 silly addNameRange     '4.3.0',
+219 silly addNameRange     '4.4.0' ] ]
+220 silly addNamed lodash.template@3.6.2
+221 verbose addNamed "3.6.2" is a plain semver version for lodash.template
+222 http 304 https://registry.npmjs.org/gulp-util
+223 verbose headers { date: 'Thu, 10 Nov 2016 01:26:55 GMT',
+223 verbose headers   via: '1.1 varnish',
+223 verbose headers   'cache-control': 'max-age=300',
+223 verbose headers   etag: '"HGL60Y154S55G9NVI8CL6923"',
+223 verbose headers   age: '138',
+223 verbose headers   connection: 'keep-alive',
+223 verbose headers   'x-served-by': 'cache-itm7423-ITM',
+223 verbose headers   'x-cache': 'HIT',
+223 verbose headers   'x-cache-hits': '2',
+223 verbose headers   'x-timer': 'S1478741215.194878,VS0,VE0',
+223 verbose headers   vary: 'Accept-Encoding' }
+224 silly get cb [ 304,
+224 silly get   { date: 'Thu, 10 Nov 2016 01:26:55 GMT',
+224 silly get     via: '1.1 varnish',
+224 silly get     'cache-control': 'max-age=300',
+224 silly get     etag: '"HGL60Y154S55G9NVI8CL6923"',
+224 silly get     age: '138',
+224 silly get     connection: 'keep-alive',
+224 silly get     'x-served-by': 'cache-itm7423-ITM',
+224 silly get     'x-cache': 'HIT',
+224 silly get     'x-cache-hits': '2',
+224 silly get     'x-timer': 'S1478741215.194878,VS0,VE0',
+224 silly get     vary: 'Accept-Encoding' } ]
+225 verbose etag https://registry.npmjs.org/gulp-util from cache
+226 verbose get saving gulp-util to C:\Users\os-huzp\AppData\Roaming\npm-cache\registry.npmjs.org\gulp-util\.cache.json
+227 verbose correctMkdir C:\Users\os-huzp\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+228 silly cache afterAdd lodash.template@3.6.2
+229 verbose afterAdd C:\Users\os-huzp\AppData\Roaming\npm-cache\lodash.template\3.6.2\package\package.json not in flight; writing
+230 verbose correctMkdir C:\Users\os-huzp\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+231 silly addNameRange number 2 { name: 'gulp-util', range: '>=3.0.2 <4.0.0', hasData: true }
+232 silly addNameRange versions [ 'gulp-util',
+232 silly addNameRange   [ '0.0.1',
+232 silly addNameRange     '1.0.0',
+232 silly addNameRange     '1.1.0',
+232 silly addNameRange     '1.1.1',
+232 silly addNameRange     '1.2.0',
+232 silly addNameRange     '1.3.0',
+232 silly addNameRange     '2.0.0',
+232 silly addNameRange     '2.1.1',
+232 silly addNameRange     '2.1.2',
+232 silly addNameRange     '2.1.3',
+232 silly addNameRange     '2.1.4',
+232 silly addNameRange     '2.2.0',
+232 silly addNameRange     '2.2.1',
+232 silly addNameRange     '2.2.2',
+232 silly addNameRange     '2.2.3',
+232 silly addNameRange     '2.2.5',
+232 silly addNameRange     '2.2.6',
+232 silly addNameRange     '2.2.7',
+232 silly addNameRange     '2.2.8',
+232 silly addNameRange     '2.2.9',
+232 silly addNameRange     '2.2.10',
+232 silly addNameRange     '2.2.11',
+232 silly addNameRange     '2.2.12',
+232 silly addNameRange     '2.2.13',
+232 silly addNameRange     '2.2.14',
+232 silly addNameRange     '2.2.15',
+232 silly addNameRange     '2.2.16',
+232 silly addNameRange     '2.2.17',
+232 silly addNameRange     '2.2.18',
+232 silly addNameRange     '2.2.19',
+232 silly addNameRange     '2.2.20',
+232 silly addNameRange     '3.0.0',
+232 silly addNameRange     '3.0.1',
+232 silly addNameRange     '3.0.2',
+232 silly addNameRange     '3.0.3',
+232 silly addNameRange     '3.0.4',
+232 silly addNameRange     '3.0.5',
+232 silly addNameRange     '3.0.6',
+232 silly addNameRange     '3.0.7' ] ]
+233 silly addNamed gulp-util@3.0.7
+234 verbose addNamed "3.0.7" is a plain semver version for gulp-util
+235 verbose afterAdd C:\Users\os-huzp\AppData\Roaming\npm-cache\lodash.template\3.6.2\package\package.json written
+236 http 304 https://registry.npmjs.org/through2
+237 verbose headers { date: 'Thu, 10 Nov 2016 01:26:55 GMT',
+237 verbose headers   via: '1.1 varnish',
+237 verbose headers   'cache-control': 'max-age=300',
+237 verbose headers   etag: '"9FE67TGWT3YUP196WYXP4CV2V"',
+237 verbose headers   age: '268',
+237 verbose headers   connection: 'keep-alive',
+237 verbose headers   'x-served-by': 'cache-itm7424-ITM',
+237 verbose headers   'x-cache': 'HIT',
+237 verbose headers   'x-cache-hits': '6',
+237 verbose headers   'x-timer': 'S1478741215.204818,VS0,VE0',
+237 verbose headers   vary: 'Accept-Encoding' }
+238 silly get cb [ 304,
+238 silly get   { date: 'Thu, 10 Nov 2016 01:26:55 GMT',
+238 silly get     via: '1.1 varnish',
+238 silly get     'cache-control': 'max-age=300',
+238 silly get     etag: '"9FE67TGWT3YUP196WYXP4CV2V"',
+238 silly get     age: '268',
+238 silly get     connection: 'keep-alive',
+238 silly get     'x-served-by': 'cache-itm7424-ITM',
+238 silly get     'x-cache': 'HIT',
+238 silly get     'x-cache-hits': '6',
+238 silly get     'x-timer': 'S1478741215.204818,VS0,VE0',
+238 silly get     vary: 'Accept-Encoding' } ]
+239 verbose etag https://registry.npmjs.org/through2 from cache
+240 verbose get saving through2 to C:\Users\os-huzp\AppData\Roaming\npm-cache\registry.npmjs.org\through2\.cache.json
+241 verbose correctMkdir C:\Users\os-huzp\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+242 silly cache afterAdd gulp-util@3.0.7
+243 verbose afterAdd C:\Users\os-huzp\AppData\Roaming\npm-cache\gulp-util\3.0.7\package\package.json not in flight; writing
+244 verbose correctMkdir C:\Users\os-huzp\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+245 verbose afterAdd C:\Users\os-huzp\AppData\Roaming\npm-cache\gulp-util\3.0.7\package\package.json written
+246 silly addNameRange number 2 { name: 'through2', range: '>=0.6.3 <0.7.0', hasData: true }
+247 silly addNameRange versions [ 'through2',
+247 silly addNameRange   [ '0.0.0',
+247 silly addNameRange     '0.0.1',
+247 silly addNameRange     '0.0.2',
+247 silly addNameRange     '0.0.3',
+247 silly addNameRange     '0.0.4',
+247 silly addNameRange     '0.0.5',
+247 silly addNameRange     '0.1.0',
+247 silly addNameRange     '0.2.0',
+247 silly addNameRange     '0.2.1',
+247 silly addNameRange     '0.2.2',
+247 silly addNameRange     '0.2.3',
+247 silly addNameRange     '0.3.0',
+247 silly addNameRange     '0.4.0',
+247 silly addNameRange     '0.4.1',
+247 silly addNameRange     '1.0.0',
+247 silly addNameRange     '0.4.2',
+247 silly addNameRange     '0.5.0',
+247 silly addNameRange     '0.5.1',
+247 silly addNameRange     '0.6.0',
+247 silly addNameRange     '1.1.0',
+247 silly addNameRange     '0.6.1',
+247 silly addNameRange     '1.1.1',
+247 silly addNameRange     '0.6.2',
+247 silly addNameRange     '0.6.3',
+247 silly addNameRange     '0.6.4',
+247 silly addNameRange     '0.6.5',
+247 silly addNameRange     '2.0.0',
+247 silly addNameRange     '2.0.1' ] ]
+248 silly addNamed through2@0.6.5
+249 verbose addNamed "0.6.5" is a plain semver version for through2
+250 silly cache afterAdd through2@0.6.5
+251 verbose afterAdd C:\Users\os-huzp\AppData\Roaming\npm-cache\through2\0.6.5\package\package.json not in flight; writing
+252 verbose correctMkdir C:\Users\os-huzp\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+253 verbose afterAdd C:\Users\os-huzp\AppData\Roaming\npm-cache\through2\0.6.5\package\package.json written
+254 http 304 https://registry.npmjs.org/node-notifier
+255 verbose headers { date: 'Thu, 10 Nov 2016 01:26:55 GMT',
+255 verbose headers   via: '1.1 varnish',
+255 verbose headers   'cache-control': 'max-age=300',
+255 verbose headers   etag: '"DAJYDJ4VTG9Y4JW209YLVL4N9"',
+255 verbose headers   age: '0',
+255 verbose headers   connection: 'keep-alive',
+255 verbose headers   'x-served-by': 'cache-itm7422-ITM',
+255 verbose headers   'x-cache': 'HIT',
+255 verbose headers   'x-cache-hits': '1',
+255 verbose headers   'x-timer': 'S1478741215.205061,VS0,VE576',
+255 verbose headers   vary: 'Accept-Encoding' }
+256 silly get cb [ 304,
+256 silly get   { date: 'Thu, 10 Nov 2016 01:26:55 GMT',
+256 silly get     via: '1.1 varnish',
+256 silly get     'cache-control': 'max-age=300',
+256 silly get     etag: '"DAJYDJ4VTG9Y4JW209YLVL4N9"',
+256 silly get     age: '0',
+256 silly get     connection: 'keep-alive',
+256 silly get     'x-served-by': 'cache-itm7422-ITM',
+256 silly get     'x-cache': 'HIT',
+256 silly get     'x-cache-hits': '1',
+256 silly get     'x-timer': 'S1478741215.205061,VS0,VE576',
+256 silly get     vary: 'Accept-Encoding' } ]
+257 verbose etag https://registry.npmjs.org/node-notifier from cache
+258 verbose get saving node-notifier to C:\Users\os-huzp\AppData\Roaming\npm-cache\registry.npmjs.org\node-notifier\.cache.json
+259 verbose correctMkdir C:\Users\os-huzp\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+260 silly addNameRange number 2 { name: 'node-notifier', range: '>=4.1.0 <5.0.0', hasData: true }
+261 silly addNameRange versions [ 'node-notifier',
+261 silly addNameRange   [ '0.0.1',
+261 silly addNameRange     '0.0.2',
+261 silly addNameRange     '0.5.0',
+261 silly addNameRange     '1.0.0-beta',
+261 silly addNameRange     '1.0.0-beta2',
+261 silly addNameRange     '1.1.0',
+261 silly addNameRange     '1.1.1-1',
+261 silly addNameRange     '1.1.1-2',
+261 silly addNameRange     '1.1.2-0',
+261 silly addNameRange     '1.2.0',
+261 silly addNameRange     '1.2.1',
+261 silly addNameRange     '2.0.0-alpha',
+261 silly addNameRange     '2.0.1',
+261 silly addNameRange     '2.0.2',
+261 silly addNameRange     '2.0.3',
+261 silly addNameRange     '2.0.4',
+261 silly addNameRange     '2.0.5',
+261 silly addNameRange     '2.0.6',
+261 silly addNameRange     '3.0.0',
+261 silly addNameRange     '3.0.1',
+261 silly addNameRange     '3.0.2',
+261 silly addNameRange     '3.0.3',
+261 silly addNameRange     '3.0.4',
+261 silly addNameRange     '3.0.6',
+261 silly addNameRange     '3.1.1',
+261 silly addNameRange     '3.1.2',
+261 silly addNameRange     '3.1.3',
+261 silly addNameRange     '3.2.0',
+261 silly addNameRange     '3.2.1',
+261 silly addNameRange     '3.3.0',
+261 silly addNameRange     '3.4.0',
+261 silly addNameRange     '3.4.1',
+261 silly addNameRange     '4.0.0',
+261 silly addNameRange     '4.0.1',
+261 silly addNameRange     '4.0.2',
+261 silly addNameRange     '4.0.3',
+261 silly addNameRange     '4.1.0',
+261 silly addNameRange     '4.1.1',
+261 silly addNameRange     '4.1.2',
+261 silly addNameRange     '4.2.0',
+261 silly addNameRange     '4.2.1',
+261 silly addNameRange     '4.2.2',
+261 silly addNameRange     '4.2.3',
+261 silly addNameRange     '4.3.0',
+261 silly addNameRange     '4.3.1',
+261 silly addNameRange     '4.4.0',
+261 silly addNameRange     '4.5.0',
+261 silly addNameRange     '4.6.0',
+261 silly addNameRange     '4.6.1' ] ]
+262 silly addNamed node-notifier@4.6.1
+263 verbose addNamed "4.6.1" is a plain semver version for node-notifier
+264 silly mapToRegistry name node-notifier
+265 silly mapToRegistry using default registry
+266 silly mapToRegistry registry https://registry.npmjs.org/
+267 silly mapToRegistry data Result {
+267 silly mapToRegistry   raw: 'node-notifier',
+267 silly mapToRegistry   scope: null,
+267 silly mapToRegistry   name: 'node-notifier',
+267 silly mapToRegistry   rawSpec: '',
+267 silly mapToRegistry   spec: 'latest',
+267 silly mapToRegistry   type: 'tag' }
+268 silly mapToRegistry uri https://registry.npmjs.org/node-notifier
+269 verbose addRemoteTarball https://registry.npmjs.org/node-notifier/-/node-notifier-4.6.1.tgz not in flight; adding
+270 verbose addRemoteTarball [ 'https://registry.npmjs.org/node-notifier/-/node-notifier-4.6.1.tgz',
+270 verbose addRemoteTarball   '056d14244f3dcc1ceadfe68af9cff0c5473a33f3' ]
+271 info retry fetch attempt 1 at 09:26:56
+272 info attempt registry request try #1 at 09:26:56
+273 http fetch GET https://registry.npmjs.org/node-notifier/-/node-notifier-4.6.1.tgz
+274 http fetch 200 https://registry.npmjs.org/node-notifier/-/node-notifier-4.6.1.tgz
+275 info retry will retry, error on last attempt: Error: read ECONNRESET
+276 info retry will retry, error on last attempt: Error: read ECONNRESET
+277 silly fetchAndShaCheck shasum 056d14244f3dcc1ceadfe68af9cff0c5473a33f3
+278 verbose about to build D:\project\gulp\node_modules\gulp-notify
+279 verbose unlock done using C:\Users\os-huzp\AppData\Roaming\npm-cache\_locks\gulp-notify-8eef068a24d43774.lock for D:\project\gulp\node_modules\gulp-notify
+280 verbose stack Error: shasum check failed for C:\Users\os-huzp\AppData\Local\Temp\npm-1660-c7f93a36\registry.npmjs.org\node-notifier\-\node-notifier-4.6.1.tgz
+280 verbose stack Expected: 056d14244f3dcc1ceadfe68af9cff0c5473a33f3
+280 verbose stack Actual:   f1c2a5453a6a05a62c2e1252c6b2cb1ff3e40cf9
+280 verbose stack From:     https://registry.npmjs.org/node-notifier/-/node-notifier-4.6.1.tgz
+280 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\sha\index.js:25:8
+280 verbose stack     at ReadStream.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\sha\index.js:72:7)
+280 verbose stack     at emitNone (events.js:72:20)
+280 verbose stack     at ReadStream.emit (events.js:166:7)
+280 verbose stack     at endReadableNT (_stream_readable.js:913:12)
+280 verbose stack     at nextTickCallbackWith2Args (node.js:442:9)
+280 verbose stack     at process._tickCallback (node.js:356:17)
+281 verbose cwd D:\project\gulp
+282 error Windows_NT 6.1.7601
+283 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "--save-dev" "gulp-notify"
+284 error node v4.4.4
+285 error npm  v2.15.1
+286 error shasum check failed for C:\Users\os-huzp\AppData\Local\Temp\npm-1660-c7f93a36\registry.npmjs.org\node-notifier\-\node-notifier-4.6.1.tgz
+286 error Expected: 056d14244f3dcc1ceadfe68af9cff0c5473a33f3
+286 error Actual:   f1c2a5453a6a05a62c2e1252c6b2cb1ff3e40cf9
+286 error From:     https://registry.npmjs.org/node-notifier/-/node-notifier-4.6.1.tgz
+287 error If you need help, you may report this error at:
+287 error     <https://github.com/npm/npm/issues>
+288 verbose exit [ 1, true ]
+289 verbose unbuild node_modules\gulp-notify
+290 info preuninstall gulp-notify@2.2.0
+291 info uninstall gulp-notify@2.2.0
+292 verbose unbuild rmStuff gulp-notify@2.2.0 from D:\project\gulp\node_modules
+293 info postuninstall gulp-notify@2.2.0
+294 silly gentlyRm D:\project\gulp\node_modules\gulp-notify is being purged from base D:\project\gulp
+295 verbose gentlyRm don't care about contents; nuking D:\project\gulp\node_modules\gulp-notify
+296 silly vacuum-fs purging D:\project\gulp\node_modules\gulp-notify
+297 silly vacuum-fs quitting because other entries in D:\project\gulp\node_modules
